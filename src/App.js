@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Main from './pages/mainpage';
+import Data from './pages/secondarypage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // No Router import needed here anymore
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/secondarypage" element={<Data />} />
+    </Routes>
   );
 }
 
 export default App;
+
