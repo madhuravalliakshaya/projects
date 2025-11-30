@@ -9,7 +9,8 @@ const pageStyles = {
   justifyContent: "center",
   background: "linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)",
   fontFamily: "Poppins, sans-serif",
-  padding: "20px"
+  padding: "20px",
+  height: "100%",
 };
 
 const cardStyles = {
